@@ -129,13 +129,13 @@ If a URL appears in a markdown file, it will be transformed into a clickable lin
 - list
 
 
-##### Unordered list with an embedded lists
+#### Unordered list with an embedded lists
 
 - This 
 - bulleted 
 - list
-    - Mrs. Peacock
-    - Mr. Green
+  - Mrs. Peacock
+  - Mr. Green
 - contains  
 - other
     1. Colonel Mustard
@@ -221,7 +221,7 @@ This is an example of `in-line code`.
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/R6_eWWfNB54" frameborder="0" allowfullscreen></iframe>
 
-## docs.ms extentions
+## docs.ms extensions
 
 ### Button
 

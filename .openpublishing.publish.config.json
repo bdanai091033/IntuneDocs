@@ -1,86 +1,133 @@
 {
-  "build_entry_point": "docs.ps1",
-    "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/IntuneDocs",
-    "git_repository_branch_open_to_public_contributors": "live",
-    "docsets_to_publish": [
-        {
-            "docset_name": "InTuneDocs",
-            "build_output_subfolder": "InTuneDocs",
-            "locale": "en-us",
-            "version": 0,
+  "build_entry_point": "docs",
+  "docsets_to_publish": [
+    {
+      "docset_name": "device-mgmt",
+      "build_source_folder": "device-mgmt",
+      "build_output_subfolder": "device-mgmt",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
       "open_to_public_contributors": true,
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        },
-        {
-            "docset_name": "IntUnderstand",
-            "build_output_subfolder": "InTuneDocs/Understand",
-            "locale": "en-us",
-            "version": 0,
+      "type_mapping": {
+        "ZonePivotGroups": "Toc",
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "intune-azure",
+      "build_source_folder": "intune",
+      "build_output_subfolder": "intune",
+      "locale": "en-us",
+      "monikers": [],
       "open_to_public_contributors": true,
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        },
-                {
-            "docset_name": "IntGetStarted",
-            "build_output_subfolder": "InTuneDocs/GetStarted",
-            "locale": "en-us",
-            "version": 0,
+      "type_mapping": {
+        "ZonePivotGroups": "Toc",
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content",
+        "LandingData": "Content"
+      },
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "intune-azure-redir",
+      "build_source_folder": "intune-azure",
+      "build_output_subfolder": "intune-azure-redir",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "InTuneDocs",
+      "build_source_folder": "intune-classic",
+      "build_output_subfolder": "intune-classic",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content",
+        "LandingData": "Content"
+      },
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "intune-user-help",
+      "build_source_folder": "intune-user-help",
+      "build_output_subfolder": "intune-user-help",
+      "locale": "en-us",
+      "monikers": [],
       "open_to_public_contributors": true,
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        },
-                {
-            "docset_name": "IntPlanDesign",
-            "build_output_subfolder": "InTuneDocs/PlanDesign",
-            "locale": "en-us",
-            "version": 0,
-      "open_to_public_contributors": true,
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        },
-                {
-            "docset_name": "IntDeployUse",
-            "build_output_subfolder": "InTuneDocs/DeployUse",
-            "locale": "en-us",
-            "version": 0,
-      "open_to_public_contributors": true,
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        },
-                        {
-            "docset_name": "IntTroubleshoot",
-            "build_output_subfolder": "InTuneDocs/Troubleshoot",
-            "locale": "en-us",
-            "version": 0,
-      "open_to_public_contributors": true,
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        },
-                        {
-            "docset_name": "EndUser",
-            "build_output_subfolder": "InTuneDocs/EndUser",
-            "locale": "en-us",
-            "version": 0,
-      "open_to_public_contributors": true,
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        }
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content",
+        "LandingData": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    }
+  ],
+  "notification_subscribers": [
+    ""
+  ],
+  "sync_notification_subscribers": [],
+  "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/IntuneDocs",
+  "git_repository_branch_open_to_public_contributors": "master",
+  "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
+  "contribution_branch_mappings": {},
+  "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master",
+      "branch_mapping": {}
+    }
+  ],
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf"
     ],
-    "dependent_repositories": [
-      {
-        "path_to_root": "_themes",
-        "url": "https://github.com/Microsoft/templates.docs.msft",
-        "branch": "master"
-      }
-    ],
-    "notification_subscribers": [""],
-  "need_preview_pull_request": "true"
+    "master": [
+      "Publish",
+      "Pdf"
+    ]
+  },
+  "need_generate_pdf_url_template": true,
+  "targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }
